@@ -1,3 +1,6 @@
 [submodule "bundle/supertab.vim"]
 	path = bundle/supertab.vim
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/jedi-vim.vim"]
+	path = bundle/jedi-vim.vim
+	url = https://github.com/davidhalter/jedi-vim.git
