@@ -24,3 +24,4 @@ set showmatch
 set laststatus=2
 
 let g:lightline = {'colorscheme': 'solarized'}
+nmap <leader>n :NERDTreeToggle<CR>
