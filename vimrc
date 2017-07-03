@@ -1,6 +1,6 @@
 execute pathogen#infect()
-filetype on
 syntax on
+filetype plugin indent on
 set background=dark
 colorscheme solarized
 set guifont=Menlo\ for\ Powerline:h18 
@@ -21,3 +21,6 @@ set autoindent
 set hlsearch
 
 set showmatch
+set laststatus=2
+
+let g:lightline = {'colorscheme': 'solarized'}
