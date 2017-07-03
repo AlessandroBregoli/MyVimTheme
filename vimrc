@@ -1,3 +1,4 @@
+execute pathogen#infect()
 filetype on
 syntax on
 set background=dark
