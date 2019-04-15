@@ -25,4 +25,5 @@ set laststatus=2
 let g:lightline = {'colorscheme': 'solarized'}
 
 call plug#begin()
+Plug 'https://github.com/davidhalter/jedi-vim.git'
 call plug#end()
