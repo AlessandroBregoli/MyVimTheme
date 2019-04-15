@@ -1,4 +1,3 @@
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set background=dark
@@ -24,4 +23,6 @@ set showmatch
 set laststatus=2
 
 let g:lightline = {'colorscheme': 'solarized'}
-nmap <leader>n :NERDTreeToggle<CR>
+
+call plug#begin()
+call plug#end()
