@@ -26,6 +26,10 @@ let g:lightline = {
   \'colorscheme':'solarized',
   \}
 
+let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki"},
+                    \{'path':'~/.vimwiki/pathfinder_campagnia_jenny/'}]
+                      
+
 call plug#begin()
 Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
