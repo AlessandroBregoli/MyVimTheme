@@ -26,8 +26,11 @@ let g:lightline = {
   \'colorscheme':'solarized',
   \}
 
-let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki"},
-                    \{'path':'~/.vimwiki/pathfinder_campagnia_jenny/'}]
+let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
+                      \ 'syntax': 'markdown', 'ext': '.md'},
+                    \ {'path':'~/.vimwiki/pathfinder_campagnia_jenny/',
+                     \ 'syntax': 'markdown', 'ext': '.md',
+                     \ 'custom_wiki2html':'~/.config/nvim/wiki2html.sh'}]
                       
 
 call plug#begin()
