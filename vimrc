@@ -22,8 +22,12 @@ set hlsearch
 set showmatch
 set laststatus=2
 
-let g:lightline = {'colorscheme': 'solarized'}
+let g:lightline = {
+  \'colorscheme':'solarized',
+  \}
 
 call plug#begin()
 Plug 'https://github.com/davidhalter/jedi-vim.git'
+Plug 'https://github.com/vimwiki/vimwiki.git'
+Plug 'https://github.com/itchyny/lightline.vim.git'
 call plug#end()
