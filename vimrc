@@ -4,7 +4,7 @@ set background=dark
 colorscheme solarized
 set guifont=Menlo\ for\ Powerline:h18 
 set colorcolumn=80
-set number
+set number relativenumber
 
 set hidden
 set history=100
