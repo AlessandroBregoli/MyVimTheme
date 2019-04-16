@@ -27,10 +27,13 @@ let g:lightline = {
   \}
 
 let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
-                      \ 'syntax': 'markdown', 'ext': '.md'},
+                      \ 'syntax': 'markdown', 'ext': '.md',
+                       \ 'custom_wiki2html':'~/.config/nvim/vimwiki_utils/wiki2html.sh',
+                     \ },
                     \ {'path':'~/.vimwiki/pathfinder_campagnia_jenny/',
                      \ 'syntax': 'markdown', 'ext': '.md',
-                     \ 'custom_wiki2html':'~/.config/nvim/wiki2html.sh'}]
+                     \ 'custom_wiki2html':'~/.config/nvim/vimwiki_utils/wiki2html.sh',
+                     \ }]
                       
 
 call plug#begin()

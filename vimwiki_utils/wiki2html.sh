@@ -6,14 +6,19 @@ EXTENSION="$3"
 OUTPUTDIR="$4"
 INPUT="$5"
 CSSFILE="$6"
+ROOT_PATH="${10}"
+
 
 FILE=$(basename "$INPUT")
 FILENAME=$(basename "$INPUT" .$EXTENSION)
 FILEPATH=${INPUT%$FILE}
 OUTDIR=${OUTPUTDIR%$FILEPATH*}
 OUTPUT="$OUTDIR"/$FILENAME
-CSSFILENAME=$(basename "$6")
-
+if [ "$ROOT_PATH" == "-" ]; then
+  CSSFILENAME=$(basename "$6")
+else
+  CSSFILENAME=$ROOT_PATH/$(basename "$6")
+fi
 HAS_MATH=$(grep -o "\$\$.\+\$\$" "$INPUT")
 #if [ ! -z "$HAS_MATH" ]; then
 #    MATH="--mathjax=https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
