@@ -30,7 +30,7 @@ let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
                       \ 'syntax': 'markdown', 'ext': '.md',
                        \ 'custom_wiki2html':'~/.config/nvim/vimwiki_utils/wiki2html.sh',
                      \ },
-                    \ {'path':'~/.vimwiki/pathfinder_campagnia_jenny/',
+                    \ {'path':'~/.vimwiki/pathfinder_campagna_jenny/',
                      \ 'syntax': 'markdown', 'ext': '.md',
                      \ 'custom_wiki2html':'~/.config/nvim/vimwiki_utils/wiki2html.sh',
                      \ }]
