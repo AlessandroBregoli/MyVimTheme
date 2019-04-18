@@ -22,6 +22,8 @@ set hlsearch
 set showmatch
 set laststatus=2
 
+map <C-n> :NERDTreeToggle<CR>
+
 let g:lightline = {
   \'colorscheme':'solarized',
   \}
@@ -40,4 +42,5 @@ call plug#begin()
 Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
 call plug#end()
