@@ -30,4 +30,4 @@ HAS_MATH=$(grep -o "\$\$.\+\$\$" "$INPUT")
 
 #sed -r 's/(\[.+\])\(([^)]+)\)/\1(\2.html)/g' <"$INPUT" | pandoc $MATH -s -f $SYNTAX -t html -c $CSSFILENAME | sed -r 's/<li>(.*)\[ \]/<li class="todo done0">\1/g; s/<li>(.*)\[X\]/<li class="todo done4">\1/g' >"$OUTPUT.html"
 
-sed -r 's/(\[.+\])\(([^#h][^)]+)\)/\1(\2.html)/g' <"$INPUT" |pandoc -s -f $SYNTAX -t html -o "$OUTPUT.html" -c $CSSFILENAME
+sed -r 's/([^!]\[.+\])\(([^#h][^)]+)\)/\1(\2.html)/g' <"$INPUT" |pandoc -s -f $SYNTAX -t html -o "$OUTPUT.html" -c $CSSFILENAME
