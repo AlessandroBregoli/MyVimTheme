@@ -36,11 +36,13 @@ let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
                      \ 'syntax': 'markdown', 'ext': '.md',
                      \ 'custom_wiki2html':'~/.config/nvim/vimwiki_utils/wiki2html.sh',
                      \ }]
-                      
+
+let g:vimwiki_global_ext = 0
+
 
 call plug#begin()
 Plug 'https://github.com/davidhalter/jedi-vim.git'
-Plug 'https://github.com/vimwiki/vimwiki.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/vimwiki/vimwiki.git'
 call plug#end()
