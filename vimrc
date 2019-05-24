@@ -45,4 +45,5 @@ Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
+Plug 'https://github.com/nvie/vim-flake8.git'
 call plug#end()
