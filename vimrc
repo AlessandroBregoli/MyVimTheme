@@ -39,6 +39,9 @@ let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
 
 let g:vimwiki_global_ext = 0
 
+" Run pep8 when save a python file
+autocmd BufWritePost *.py call Flake8()
+
 
 call plug#begin()
 Plug 'https://github.com/davidhalter/jedi-vim.git'
@@ -46,4 +49,5 @@ Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
 Plug 'https://github.com/nvie/vim-flake8.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 call plug#end()
