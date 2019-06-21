@@ -40,7 +40,7 @@ let g:vimwiki_list = [{'path':"~/.vimwiki/default_vimwiki",
 let g:vimwiki_global_ext = 0
 
 " Run pep8 when save a python file
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 
 
 call plug#begin()
