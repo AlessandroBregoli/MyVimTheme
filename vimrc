@@ -2,6 +2,7 @@ syntax on
 filetype plugin indent on
 set background=dark
 colorscheme solarized
+hi Normal guibg=NONE ctermbg=NONE
 set guifont=Menlo\ for\ Powerline:h18 
 set colorcolumn=80
 set number relativenumber
