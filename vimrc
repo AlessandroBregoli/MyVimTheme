@@ -47,7 +47,7 @@ let g:vimwiki_global_ext = 0
 autocmd! BufNewFile,BufRead Dvcfile,*.dvc setfiletype yaml
 
 call plug#begin()
-Plug 'https://github.com/davidhalter/jedi-vim.git'
+"Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
