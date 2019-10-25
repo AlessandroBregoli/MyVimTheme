@@ -46,6 +46,8 @@ let g:vimwiki_global_ext = 0
 " DVC
 autocmd! BufNewFile,BufRead Dvcfile,*.dvc setfiletype yaml
 
+let g:deoplete#enable_at_startup = 1
+
 call plug#begin()
 "Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
@@ -53,4 +55,6 @@ Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/vimwiki/vimwiki.git'
 Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'deoplete-plugins/deoplete-jedi'
 call plug#end()
