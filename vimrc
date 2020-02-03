@@ -57,4 +57,5 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'lervag/vimtex'
 call plug#end()
